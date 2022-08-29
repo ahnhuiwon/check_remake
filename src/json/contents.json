@@ -1,0 +1,80 @@
+{
+    "arcane": [
+      {
+        "id": 1,
+        "first_name": "소멸의 여로",
+        "second_name" : "에르다 스펙트럼",
+        "link": "./image/contents/소멸의여로.jpeg",
+        "sym_link": "/img/여로심볼.png",
+        "first_mode": true,
+        "second_mode": true,
+        "close": false
+      },
+      {
+        "id": 2,
+        "first_name": "츄츄 아일랜드",
+        "second_name": "배고픈 무토",
+        "link": "./image/contents/츄츄아일랜드.jpeg",
+        "sym_link": "/img/츄츄심볼.png",
+        "first_mode": false,
+        "second_mode": false,
+        "close": false
+      },
+      {
+        "id": 3,
+        "first_name": "레헬른",
+        "second_name": "드림 브레이커",
+        "link": "./image/contents/레헬른.jpeg",
+        "sym_link": "/img/레헬른심볼.png",
+        "first_mode": false,
+        "second_mode": false,
+        "close": false
+      },
+      {
+        "id": 4,
+        "first_name": "아르카나",
+        "second_name": "스피릿 세이비어",
+        "link": "./image/contents/아르카나.jpeg",
+        "sym_link": "/img/아르카나심볼.png",
+        "first_mode": false,
+        "second_mode": false,
+        "close": false
+      },
+      {
+        "id": 5,
+        "first_name": "모라스",
+        "second_name": "엔하임 디펜스",
+        "link": "./image/contents/모라스.jpeg",
+        "sym_link": "/img/모라스심볼.png",
+        "first_mode": false,
+        "second_mode": false,
+        "close": false
+      },
+      {
+        "id": 6,
+        "first_name": "에스페라",
+        "second_name": "프로텍트 에스페라",
+        "link": "./image/contents/에스페라.jpeg",
+        "sym_link": "/img/에스페라심볼.png",
+        "first_mode": false,
+        "second_mode":  false,
+        "close": false
+      },
+      {
+        "id": 7,
+        "first_name": "세르니움",
+        "link": "./image/contents/세르니움.png",
+        "sym_link": "/img/세르니움심볼.png",
+        "mode": false,
+        "close": false
+      },
+      {
+        "id": 8,
+        "first_name": "불타는 세르니움",
+        "link": "./image/contents/불타는_세르니움.jpeg",
+        "sym_link": "/img/아르크스심볼.png",
+        "mode": false,
+        "close": false
+      }
+    ]
+}

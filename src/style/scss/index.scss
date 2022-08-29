@@ -1,0 +1,426 @@
+@font-face {
+    font-family: "MaplestoryOTFBold";
+    src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff")
+      format("woff");
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @keyframes back {
+    100% {
+      background-position: 2000px 0;
+    }
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "MaplestoryOTFBold";
+  }
+  
+  body {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), transparent),
+      url("../image/rehelren.jpeg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 0 8%;
+    background-attachment: fixed;
+  }
+
+  @media all and (min-width:1200px){
+    .mobile_menu {
+      display: none;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .hidden_menu {
+      display: none;
+    }
+  
+    .title_text {
+      transition: 0.3s;
+    }
+    
+    .title_text:hover {
+      color: #f2b84b;
+    }
+    
+    nav {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 37px 0;
+    }
+    
+    nav a:link {
+      width: 240px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    nav a:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav a :hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav a:active {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul {
+      flex: 1;
+      text-align: right;
+      margin-bottom: 0 !important;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 30px;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 25px;
+      position: relative;
+    }
+    
+    nav ul li a:link {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul li a:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul li a :hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul li a:active {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul li a::after {
+      content: "";
+      width: 0;
+      height: 3px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      transition: 0.3s;
+    }
+    
+    nav ul li a:hover::after {
+      width: 50%;
+    }
+  
+    .text-box {
+      color: #fff;
+      position: absolute;
+      bottom: 8%;
+    }
+    
+    .text-box p {
+      font-size: 50px;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px black;
+    }
+    
+    .text-box h1 {
+      color: transparent;
+      -webkit-text-stroke: 1px #fff;
+      margin-left: -10px;
+      font-size: 190px;
+      line-height: 170px;
+      background: url("../image/back.png");
+      -webkit-background-clip: text;
+      background-position: 0 0;
+      animation: back 20s linear infinite;
+    }
+  
+    .loading_wrap {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: white;
+    }
+  
+    .top_icon_wrap {
+      display: none;
+    }
+  }
+
+  @media all and (min-width:768px) and (max-width:1399px) {
+    .mobile_menu {
+      display: none;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .hidden_menu {
+      display: none;
+    }
+  
+    .title_text {
+      transition: 0.3s;
+    }
+    
+    .title_text:hover {
+      color: #f2b84b;
+    }
+    
+    nav {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      flex-wrap: wrap;
+      padding: 37px 0;
+    }
+    
+    nav a:link {
+      width: 240px;
+      cursor: pointer;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    
+    nav a:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav a :hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav a:active {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul {
+      flex: 1;
+      text-align: right;
+      margin-bottom: 0 !important;
+    }
+    
+    nav ul li {
+      display: inline-block;
+      list-style: none;
+      margin: 10px 10px !important;
+    }
+    
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 25px !important;
+      position: relative;
+    }
+    
+    nav ul li a:link {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul li a:visited {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul li a :hover {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul li a:active {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav ul li a::after {
+      content: "";
+      width: 0;
+      height: 3px;
+      position: absolute;
+      bottom: -5px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: #fff;
+      transition: 0.3s;
+    }
+    
+    nav ul li a:hover::after {
+      width: 50%;
+    }
+  
+    .text-box {
+      color: #fff;
+      position: absolute;
+      bottom: 8%;
+    }
+    
+    .text-box p {
+      font-size: 50px;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px black;
+    }
+    
+    .text-box h1 {
+      color: transparent;
+      -webkit-text-stroke: 1px #fff;
+      margin-left: -10px;
+      font-size: 190px;
+      line-height: 170px;
+      background: url("../image/back.png");
+      -webkit-background-clip: text;
+      background-position: 0 0;
+      animation: back 20s linear infinite;
+    }
+  
+    .top_icon_wrap {
+      display: none;
+    }
+  }
+
+  @media all and (max-width:767px) {
+    .nav_wrap {
+      display: none;
+    }
+
+    .mobile_menu {
+      width: 100%;
+      background-color: darkslateblue;
+      height: 50px;
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 1000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 30px;
+
+      a {
+        color: white;
+        font-size: 1.4rem;
+        text-decoration: none;
+      }
+
+      .icon_wrap{
+        color: white;
+
+        svg {
+          width: 25px;
+          height: 25px;
+        }
+      }
+    }
+
+    .hidden_menu {
+      height: 0;
+      overflow: hidden;
+      padding-top: 50px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: darkslateblue;
+      width: 100%;
+      transition: 0.3s all;
+      z-index: 100;
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+
+      li {
+        list-style: none;
+        padding: 10px 0;
+      }
+
+      li > a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.3rem;
+      }
+    }
+
+    .contents_wrap {
+      margin-top: 100px;
+    }
+
+    .text-box {
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    
+    .text-box p {
+      font-size: 30px;
+      font-weight: 600;
+      text-shadow: 1px 1px 2px black;
+    }
+    
+    .text-box h1 {
+      color: transparent;
+      -webkit-text-stroke: 1px #fff;
+      margin-left: -10px;
+      font-size: 90px;
+      line-height: 100px;
+      background: url("../image/back.png");
+      -webkit-background-clip: text;
+      background-position: 0 0;
+      animation: back 20s linear infinite;
+    }
+
+    .text-box h3 {
+      font-size: 1rem;
+      text-shadow: 1px 1px 2px black;
+    }
+
+    .top_icon_wrap {
+      position: fixed;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #0d6efd;
+      color: white;
+      bottom: 2%;
+      right: 5%;
+      font-size: 1.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+
+  
+
