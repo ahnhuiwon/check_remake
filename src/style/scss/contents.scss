@@ -25,6 +25,13 @@
             display: flex !important;
             justify-content: space-between;
             align-items: center;
+
+            div > svg {
+                width: 20px;
+                height: 20px;
+                color: darkslateblue;
+                cursor: pointer;
+            }
           }
           
           .span_input {
