@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useSelector, useDispatch } from 'react-redux';
+import Swal from "sweetalert2";
 import { set_contents } from "../redux/action";
 
 export const useContentsUdt = () => {
@@ -39,11 +40,41 @@ export const useContentsUdt = () => {
     const close_mode = (param) => {
         console.log(param);
         contents_data.arcane.map((data)=>(
-            data.id === param ? data.close_mode = true : ''
+            data.id === param ? data.close = true : ''
         ));
 
         dispatch(set_contents(contents_data));
     }
 
-    return { change_mode, sub_change_mode, reset_mode, close_mode };
+    const symbol_setting = (param) => {
+
+        contents_data.arcane.map((data)=>{
+            if(data.id === param){
+                if(data.close === false){
+                    Swal.fire(
+                        '추가할 수 없습니다!',
+                        '이미 존재하는 컨텐츠입니다.',
+                        'warning'
+                    )
+                }
+            }
+        });
+
+        contents_data.arcane.map((data)=>(
+            data.id === param && (data.close = false)
+        ));
+
+        dispatch(set_contents(contents_data));
+    }
+
+    const contents_set = () => {
+        window.localStorage.setItem("user_setting", JSON.stringify(contents_data));
+        Swal.fire(
+            '완료되었습니다!',
+            '선택하신 컨텐츠가 저장되었습니다.',
+            'success'
+        )
+    }
+
+    return { change_mode, sub_change_mode, reset_mode, close_mode, symbol_setting, contents_set };
 }

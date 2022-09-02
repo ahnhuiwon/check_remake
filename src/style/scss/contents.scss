@@ -40,3 +40,19 @@
           }
     }
 }
+
+.col_div .row {
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.col_div .row img {
+  width: auto;
+  height: 95px;
+}
+
+.col_div .row p {
+  text-align: center;
+}

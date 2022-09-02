@@ -3,6 +3,8 @@ import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 import { useDispatch, useSelector } from 'react-redux';
 import { set_modal } from "../../redux/action";
+import SymbolSetting from "../contents/SymbolSetting";
+import { useContentsUdt } from "../../customHooks/useContents";
 
 const ContentsModal = () => {
 
@@ -22,16 +24,15 @@ const ContentsModal = () => {
                     <Modal.Title>컨텐츠 추가하기</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
+                    <div className="row">
                     {
-                        contents_data.arcane.map(data => (
-                            console.log(data)
+                        contents_data.arcane.map((data, index) => (
+                            <SymbolSetting data={data} index={index}/>
                         ))
                     }
+                    </div>
                 </Modal.Body>
                 <Modal.Footer>
-                    <Button variant="primary" >
-                        저장하기
-                    </Button>
                     <Button variant="secondary" onClick={()=>{close_modal()}}>
                         닫기
                     </Button>

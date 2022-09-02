@@ -4,6 +4,7 @@ import MainRoute from "./route/MainRoute";
 import ContentsRoute from "./route/ContentsRoute";
 import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
+import DashboardRoute from "./route/DashboardRoute";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
           <Routes>
             <Route path="/" element={ <MainRoute /> } />
             <Route path="/contents" element={ <ContentsRoute /> } />
+            <Route path="/dashboard" element={ <DashboardRoute /> } />
           </Routes>
         </div>
       </div>

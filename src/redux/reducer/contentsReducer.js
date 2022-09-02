@@ -1,7 +1,15 @@
 import dummy_contents from '../../json/contents.json'
 
-const initial_state = {
-    contents_data : dummy_contents
+let entries_data = JSON.parse(localStorage.getItem('user_setting'));
+
+if(entries_data === null) {
+    var initial_state = {
+        contents_data : dummy_contents
+    }
+} else {
+    var initial_state = {
+        contents_data : entries_data
+    }
 }
 
 const contentsReducer = (state = initial_state, action) => {

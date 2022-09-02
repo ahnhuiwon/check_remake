@@ -11,7 +11,7 @@ const ContentsSymbol = ({data}) => {
 
     return(
         <>
-        { !data.close_mode &&
+        { !data.close &&
             <div className="col-xs-12 col-sm-6 col-lg-4 col-xl-3 mb-3 card_wrap">
                 <div className="card">
                     <img src={`${data.link}`} className="card-img-top" alt="..." />
