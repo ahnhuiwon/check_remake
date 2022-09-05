@@ -1,13 +1,14 @@
 import dummy_contents from '../../json/contents.json'
 
+var initial_state = {};
 let entries_data = JSON.parse(localStorage.getItem('user_setting'));
 
 if(entries_data === null) {
-    var initial_state = {
+    initial_state = {
         contents_data : dummy_contents
     }
 } else {
-    var initial_state = {
+    initial_state = {
         contents_data : entries_data
     }
 }

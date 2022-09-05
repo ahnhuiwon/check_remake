@@ -1,0 +1,19 @@
+.hunt_btn_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.hunt_card {
+    display: flex;
+    align-items: center;
+
+    img {
+        width: 100px;
+        height: 100px;
+        margin-top: 24px;
+    }
+}
+
+.hunt_input {
+    margin-top: 20px;
+}

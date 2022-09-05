@@ -1,6 +1,6 @@
 import { useSelector, useDispatch } from 'react-redux';
 
-export const useScrollTop = () => {
+export const useUserSetting = () => {
 
     const scroll_top = () => {
         window.scrollTo(0,0);

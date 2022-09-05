@@ -1,0 +1,70 @@
+{
+    "item": [
+        {
+          "id": 1,
+          "name": "메소",
+          "link": "./image/item/메소뭉치.png",
+          "count": 0
+        },
+        {
+          "id": 2,
+          "name": "주문의 흔적",
+          "link": "./image/item/주문의흔적.png",
+          "count": 0
+        },
+        {
+          "id": 3,
+          "name": "코어젬스톤",
+          "link": "./image/item/코어젬스톤.png",
+          "count": 0
+        },
+        {
+          "id": 4,
+          "name": "아케인리버 물방울석",
+          "link": "./image/item/아케인리버물방울석.png",
+          "count": 0
+        },
+        {
+          "id": 5,
+          "name": "태초의 물방울석",
+          "link": "./image/item/태초의물방울석.png",
+          "count": 0
+        },
+        {
+          "id": 6,
+          "name": "혼돈의 칼날",
+          "link": "./image/item/혼돈의칼날.png",
+          "count": 0
+        },
+        {
+          "id": 7,
+          "name": "강력한 혼돈의 칼날",
+          "link": "./image/item/강력한혼돈의칼날.png",
+          "count": 0
+        },
+        {
+          "id": 8,
+          "name": "에디셔널 잠재 주문서",
+          "link": "./image/item/에디셔널잠재.png",
+          "count": 0
+        },
+        {
+          "id": 9,
+          "name": "이노센트 주문서",
+          "link": "./image/item/이노센트주문서.png",
+          "count": 0
+        },
+        {
+          "id": 10,
+          "name": "순백의 주문서",
+          "link": "./image/item/순백의주문서.png",
+          "count": 0
+        },
+        {
+          "id": 11,
+          "name": "수상한 큐브",
+          "link": "./image/item/수상한큐브.png",
+          "count": 0
+        }
+    ]
+}

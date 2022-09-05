@@ -1,9 +1,9 @@
 import { BiArrowToTop } from 'react-icons/bi'
-import { useScrollTop } from '../../customHooks/useSetting';
+import { useUserSetting } from '../../customHooks/useSetting';
 
 const UpIcon = () => {
 
-    const { scroll_top } = useScrollTop();
+    const { scroll_top } = useUserSetting();
 
     return(
         <div className='top_icon_wrap' onClick={()=>{ scroll_top() }}>

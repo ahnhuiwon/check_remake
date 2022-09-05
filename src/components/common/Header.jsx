@@ -24,9 +24,9 @@ const Header = () => {
             <li>
               <Link to="/contents">컨텐츠 체크</Link>
             </li>
-            {/* <li>
+            <li>
               <Link to="/hunt">재획비 체크</Link>
-            </li> */}
+            </li>
           </ul>
         </nav>
         <nav className="mobile_menu">
@@ -38,15 +38,15 @@ const Header = () => {
           </div>
         </nav>
         <ul className="hidden_menu" style={ menu_flag ? { height : "200px" } : { height : "0" }}>
-          {/* <li>
+          <li>
             <Link to="/dashboard" onClick={()=>{ set_menu_flag(false) }}>대시보드</Link>
-          </li> */}
+          </li>
           <li>
             <Link to="/contents" onClick={()=>{ set_menu_flag(false) }}>컨텐츠 체크</Link>
           </li>
-          {/* <li>
+          <li>
             <Link to="/hunt" onClick={()=>{ set_menu_flag(false) }}>재획비 체크</Link>
-          </li> */}
+          </li>
         </ul>
       </>
     )
