@@ -1,5 +1,14 @@
-import React, { PureComponent } from 'react';
-import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
+import React, { PureComponent } from 'react'
+import {
+  BarChart,
+  Bar,
+  XAxis,
+  YAxis,
+  CartesianGrid,
+  Tooltip,
+  Legend,
+  ResponsiveContainer,
+} from 'recharts'
 
 const data = [
   {
@@ -44,10 +53,10 @@ const data = [
     pv: 4300,
     amt: 2100,
   },
-];
+]
 
 export default class Example extends PureComponent {
-  static demoUrl = 'https://codesandbox.io/s/bar-chart-has-no-padding-jphoc';
+  static demoUrl = 'https://codesandbox.io/s/bar-chart-has-no-padding-jphoc'
 
   render() {
     return (
@@ -64,7 +73,11 @@ export default class Example extends PureComponent {
           }}
           barSize={20}
         >
-          <XAxis dataKey="name" scale="point" padding={{ left: 10, right: 10 }} />
+          <XAxis
+            dataKey="name"
+            scale="point"
+            padding={{ left: 10, right: 10 }}
+          />
           <YAxis />
           <Tooltip />
           <Legend />
@@ -72,6 +85,6 @@ export default class Example extends PureComponent {
           <Bar dataKey="pv" fill="#8884d8" background={{ fill: '#eee' }} />
         </BarChart>
       </ResponsiveContainer>
-    );
+    )
   }
 }
