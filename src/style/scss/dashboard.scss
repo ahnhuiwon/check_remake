@@ -1,8 +1,33 @@
-.label_wrap { 
+.label_wrap {
+  padding-left: 0 !important;
 
-    padding-left: 0 !important;
+  input {
+    width: 100%;
+  }
+}
 
-    input {
-        width: 100%;
-    }
+.input_wrap {
+  padding-left: 50px !important;
+  padding-right: 23px !important;
+}
+
+.union_img_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+}
+
+.union_progress_wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .progress_style {
+    width: 70%;
+  }
 }

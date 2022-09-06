@@ -1,47 +1,56 @@
 .contents_wrap {
-    background-color: white;
-    border-radius: 25px;
-    height: auto;
-    padding: 30px 30px;
+  background-color: #f9fafd;
+  border-radius: 25px;
+  height: auto;
+  padding: 30px 30px;
+  margin-bottom: 100px;
 
-    .btn_group_wrap {
-        text-align: right;
+  .btn_group_wrap {
+    text-align: right;
+  }
+
+  .btn_left {
+    margin-right: 10px;
+  }
+
+  .btn_group_wrap {
+    text-align: right;
+  }
+
+  .card_wrap {
+    margin-top: 30px;
+
+    .li_dom {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
     }
 
-    .card_wrap {
-        margin-top: 30px;
+    .div_dom {
+      display: flex !important;
+      justify-content: space-between;
+      align-items: center;
 
-        .li_dom {
-            display: flex !important;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .div_dom {
-            display: flex !important;
-            justify-content: space-between;
-            align-items: center;
-
-            div > svg {
-                width: 20px;
-                height: 20px;
-                color: darkslateblue;
-                cursor: pointer;
-            }
-          }
-          
-          .span_input {
-            display: inline-block !important;
-            zoom: 1.5;
-          }
+      div > svg {
+        width: 20px;
+        height: 20px;
+        color: darkslateblue;
+        cursor: pointer;
+      }
     }
+
+    .span_input {
+      display: inline-block !important;
+      zoom: 1.5;
+    }
+  }
 }
 
 .col_div .row {
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+  cursor: pointer;
 }
 
 .col_div .row img {
@@ -51,4 +60,9 @@
 
 .col_div .row p {
   text-align: center;
+}
+
+.widget-flat {
+  border: none !important;
+  box-shadow: 0px 0px 5px -2px !important;
 }
