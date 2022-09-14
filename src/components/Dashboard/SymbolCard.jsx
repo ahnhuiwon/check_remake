@@ -3,10 +3,11 @@ import useSymbolCalc from '../../customHooks/useSymbolCalc'
 import Swal from 'sweetalert2'
 
 const SymbolCard = ({ data }) => {
-  const [level_state, set_level_state] = useState(null)
-  const [count_state, set_count_state] = useState(null)
+  const { id } = data;
+  const [level_state, set_level_state] = useState(Number(data.level))
+  const [count_state, set_count_state] = useState(Number(data.count))
 
-  const calc_result = useSymbolCalc(level_state, count_state)
+  const calc_result = useSymbolCalc(level_state, count_state, id)
 
   const change_symbol_level = e => {
     const { value } = e.target
@@ -47,7 +48,7 @@ const SymbolCard = ({ data }) => {
             </span>
             <div class="progress">
               <div
-                class="progress-bar"
+                class="progress-bar progress-bar-striped progress-bar-animated"
                 role="progressbar"
                 style={{ width: `${calc_result}%` }}
                 aria-valuenow="25"

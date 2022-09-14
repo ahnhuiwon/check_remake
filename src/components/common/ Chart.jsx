@@ -1,16 +1,26 @@
 import React from 'react'
 import { Bar } from 'react-chartjs-2'
 import { Chart, registerables } from 'chart.js'
+import { useSelector } from 'react-redux'
 
 const Chart_data = () => {
   Chart.register(...registerables)
+  const { park } = useSelector(state=>state.parkReducer.park_data);
 
   const data = {
     labels: ['월', '화', '수', '목', '금', '토', '일'],
     datasets: [
       {
-        label: 'My First Dataset',
-        data: [40, 29, 60, 71, 36, 45, 10],
+        label: '몬스터 파크 진행률',
+        data: [
+          park[0].count,
+          park[1].count, 
+          park[2].count, 
+          park[3].count, 
+          park[4].count, 
+          park[5].count, 
+          park[6].count
+        ],
         backgroundColor: [
           'rgba(255, 99, 132, 0.2)',
           'rgba(255, 159, 64, 0.2)',
@@ -36,18 +46,14 @@ const Chart_data = () => {
 
   const options = {
     scales: {
-      yAxes: [
-        {
-          display: true,
-          ticks: {
-            beginAtZero: true,
-            min: 0,
-            max: 77,
-            stepValue: 11,
-          },
-        },
-      ],
-    },
+      y: {
+        suggestedMin: 0,
+        suggestedMax: 77,
+        ticks: {
+          stepSize: 11
+        }
+      }
+    }
   }
 
   return (

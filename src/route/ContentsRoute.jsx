@@ -1,13 +1,15 @@
+import React, {Suspense} from "react";
 import Contents from "../components/contents/Contents";
-import { DndProvider } from 'react-dnd';
-import { HTML5Backend } from 'react-dnd-html5-backend';
+import Loading from "../components/common/Loading";
+
+const ContentsSplit = React.lazy(()=> import('../components/contents/Contents'));
 
 const ContentsRoute = () => {
     return(
         <>
-            <DndProvider backend={HTML5Backend}>
-                <Contents />
-            </DndProvider>
+            <Suspense fallback={<Loading />}>
+                <ContentsSplit />
+            </Suspense>
         </>
     )
 }

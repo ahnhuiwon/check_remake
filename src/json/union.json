@@ -1,0 +1,9 @@
+{
+    "union" : 
+        {
+          "id": 1,
+          "target_rating": 0,
+          "target_level" : 0,
+          "my_level": 0
+        }
+}
