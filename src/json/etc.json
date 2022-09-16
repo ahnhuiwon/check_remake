@@ -1,0 +1,20 @@
+{
+    "etc": [ 
+        {
+        "id": 1,
+        "first_name": "몬스터파크",
+        "link": "./image/contents/몬스터파크.gif",
+        "sym_link": "./image/icon/몬스터파크.png",
+        "first_mode": false,
+        "close": false
+        },
+        {
+          "id": 2,
+          "first_name": "우르스",
+          "link": "./image/contents/우르스.jpg",
+          "sym_link": "./image/icon/우르스.png",
+          "first_mode": false,
+          "close": false
+        }
+    ]
+}

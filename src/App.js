@@ -6,6 +6,7 @@ import { DndProvider } from 'react-dnd';
 import { HTML5Backend } from 'react-dnd-html5-backend';
 import DashboardRoute from "./route/DashboardRoute";
 import HuntRoute from "./route/HuntRoute";
+import BossRoute from "./route/BossRoute";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
             <Route path="/contents" element={ <ContentsRoute /> } />
             <Route path="/dashboard" element={ <DashboardRoute /> } />
             <Route path="/hunt" element={ <HuntRoute />} />
+            <Route path="/boss" element={ <BossRoute /> } />
           </Routes>
         </div>
       </div>

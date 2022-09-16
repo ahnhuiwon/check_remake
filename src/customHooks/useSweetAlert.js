@@ -5,7 +5,7 @@ export const useSwalModule = () => {
 
     const { close_mode } = useContentsUdt();
 
-    const delete_swal = (param) => {
+    const delete_swal = (param, filter) => {
         Swal.fire({
             title: '정말 삭제하시겠습니까?',
             text: "추가하기 버튼으로 복구할 수 있습니다.",
@@ -18,7 +18,7 @@ export const useSwalModule = () => {
         }).then((result) => {
           if (result.isConfirmed) {
 
-            close_mode(param);
+            close_mode(param, filter);
 
             Swal.fire(
               '완료되었습니다!',

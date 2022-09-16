@@ -16,12 +16,20 @@ const ItemCard = ({data}) => {
             <div className="input-group hunt_input">
                 {
                     data.name === "메소" ?
-                    <span class="input-group-text" id="basic-addon1">총 메소</span> :
-                    <span class="input-group-text" id="basic-addon1">개수</span>
+                    <>
+                        <span class="input-group-text" id="basic-addon1">총 메소</span>
+                        <input type="text" class="form-control" value={data.count} placeholder="0" aria-label="Username" aria-describedby="basic-addon1" 
+                            onChange={(e)=>{ change_item(e, data.id) }}
+                        />
+                    </> :
+                    <>
+                        <span class="input-group-text" id="basic-addon1">개수</span>
+                        <input type="number" class="form-control" value={data.count} placeholder="0" aria-label="Username" aria-describedby="basic-addon1" 
+                            onChange={(e)=>{ change_item(e, data.id) }}
+                        />
+                    </>
                 }
-                <input type="number" class="form-control" value={data.count} placeholder="0" aria-label="Username" aria-describedby="basic-addon1" 
-                    onChange={(e)=>{ change_item(e, data.id) }}
-                />
+                
             </div>
         </div>
     )

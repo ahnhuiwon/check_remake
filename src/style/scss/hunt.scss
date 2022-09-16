@@ -1,6 +1,6 @@
 .hunt_btn_wrap {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
 }
 
 .hunt_card {
@@ -17,3 +17,12 @@
 .hunt_input {
     margin-top: 20px;
 }
+
+@media (max-width: 480px) {
+    .hunt_btn_wrap{
+        display: flex;
+        justify-content: flex-start;
+    }
+
+}
+  

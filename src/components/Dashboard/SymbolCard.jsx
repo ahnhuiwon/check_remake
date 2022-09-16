@@ -73,7 +73,7 @@ const SymbolCard = ({ data }) => {
                   change_symbol_level(e)
                 }}
                 min="0"
-                max="20"
+                max={id > 6 ? "11" : "20"}
               />
             </div>
             <div class="input-group-sm mb-2 col-sm-6">

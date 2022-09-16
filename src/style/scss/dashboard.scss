@@ -22,12 +22,33 @@
   }
 }
 
-.union_progress_wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
-  .progress_style {
-    width: 70%;
+.union_text {
+  display: flex;
+  justify-content: center;
+}
+
+.union_chart {
+  margin-top: 5px !important;
+}
+
+.union_percent {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.progress_style {
+  width: 100%;
+}
+
+@media (max-width: 480px) {
+  .union_text {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .union_percent {
+    display: flex;
+    justify-content: flex-start;
   }
 }

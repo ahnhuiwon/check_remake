@@ -25,6 +25,7 @@ const useSymbolCalc = (level_state, count_state, id) => {
 
 
     useEffect(()=>{
+        console.log('진입');
         if(count_state || level_state){
             symbol_level_local(id);
         }
@@ -32,6 +33,7 @@ const useSymbolCalc = (level_state, count_state, id) => {
 
 
     useEffect(()=>{
+        console.log('진입');
         if(count_state || level_state){
             symbol_count_local(id);
         }
@@ -39,6 +41,7 @@ const useSymbolCalc = (level_state, count_state, id) => {
 
 
     useEffect(()=>{
+        console.log('진입2');
         if(count_state || level_state){
             if(id < 7){
 

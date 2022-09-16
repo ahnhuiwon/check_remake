@@ -4,9 +4,8 @@ import { CgClose } from 'react-icons/cg'
 import { useContentsUdt } from "../../customHooks/useContents";
 import { useSwalModule } from "../../customHooks/useSweetAlert";
 
-const ContentsSymbol = ({data, filter}) => {
-
-    const { change_mode, sub_change_mode } = useContentsUdt();
+const EtcCard = ({data, filter}) => {
+    const { change_mode, sub_change_mode, etc_change_mode } = useContentsUdt();
     const { delete_swal } = useSwalModule();
 
     return(
@@ -24,7 +23,7 @@ const ContentsSymbol = ({data, filter}) => {
                     <ul className="list-group list-group-flush ul_wrap">
                         <li className="list-group-item li_dom">일일 퀘스트
                             <span className="form-check form-switch span_input">
-                                <input className="form-check-input" type="checkbox" checked={data.first_mode} onChange={()=>{ change_mode(data.id) }} />
+                                <input className="form-check-input" type="checkbox" checked={data.first_mode} onChange={()=>{ etc_change_mode(data.id) }} />
                             </span>
                         </li>
                         {
@@ -39,8 +38,9 @@ const ContentsSymbol = ({data, filter}) => {
                 </div>
             </div>
         }
+
         </>
     )
 }
 
-export default ContentsSymbol;
+export default EtcCard;

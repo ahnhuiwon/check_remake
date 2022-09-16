@@ -86,6 +86,16 @@
         "id": 8,
         "first_name": "불타는 세르니움",
         "link": "./image/contents/불타는_세르니움.jpeg",
+        "sym_link": "./image/icon/세르니움심볼.png",
+        "level": "0",
+        "count": "0",
+        "mode": false,
+        "close": false
+      },
+      {
+        "id": 9,
+        "first_name": "호텔 아르크스",
+        "link": "./image/contents/hotel.jpg",
         "sym_link": "./image/icon/아르크스심볼.png",
         "level": "0",
         "count": "0",

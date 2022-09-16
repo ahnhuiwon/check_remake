@@ -5,6 +5,7 @@ import { useSelector } from "react-redux";
 import ItemCard from "./ItemCard";
 import useItemUdt from "../../customHooks/useItem";
 import html2canvas from "html2canvas";
+import UpIcon from "../common/UpIcon";
 
 const Hunt = () => {
 
@@ -26,10 +27,18 @@ const Hunt = () => {
     return(
         <div className="contents_wrap">
             <div className="row">
-                <div class="hunt_btn_wrap">
-                    <h3 class>{today}</h3>
+                <h3 class="col-sm-12 col-xl-5">{today}</h3>
+                <div className="col-sm-12 col-xl-2">
+                    <div class="input-group">
+                        <span class="input-group-text" id="basic-addon1">사용한 재획비</span>
+                        <input type="number" class="form-control" placeholder="0" aria-label="Username" aria-describedby="basic-addon1" 
+                            min="0"
+                        />
+                    </div>
+                </div>
+                <div class="col-sm-12 col-xl-5 hunt_btn_wrap">
                     <div class="btn-group btn-group" role="group" aria-label="Basic example">
-                        <button type="button" class="btn btn-primary btn_left" onClick={()=>{ capture_func() }}>
+                        <button type="button" class="btn btn-primary" onClick={()=>{ capture_func() }}>
                             캡쳐하기
                         </button>
                         <button type="button" class="btn btn-primary" onClick={()=>{ item_set() }}>
@@ -46,6 +55,7 @@ const Hunt = () => {
                     ))
                 }
             </div>
+            <UpIcon />
         </div>
     )
 }

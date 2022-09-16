@@ -1,0 +1,165 @@
+{
+    "week_boss": [
+    
+    {
+      "id": 1,
+      "name": "하드 힐라",
+      "link": "./image/boss/힐라.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 2,
+      "name": "카오스 핑크빈",
+      "link": "./image/boss/핑크빈.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 3,
+      "name": "시그너스",
+      "link": "./image/boss/시그너스.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+        "id": 4,
+        "name": "카오스 자쿰",
+        "link": "./image/boss/자쿰.png",
+        "mode": false,
+        "day": "week_boss",
+        "close": false
+    },
+    {
+      "id": 5,
+      "name": "카오스 반반",
+      "link": "./image/boss/반반.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 6,
+      "name": "카오스 피에르",
+      "link": "./image/boss/피에르.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 7,
+      "name": "카오스 블러디퀸",
+      "link": "./image/boss/블러디퀸.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 8,
+      "name": "카오스 벨룸",
+      "link": "./image/boss/벨룸.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 9,
+      "name": "하드 매그너스",
+      "link": "./image/boss/매그너스.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 10,
+      "name": "카오스 파풀라투스",
+      "link": "./image/boss/파풀라투스.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 11,
+      "name": "스우",
+      "link": "./image/boss/스우.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 12,
+      "name": "데미안",
+      "link": "./image/boss/데미안.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 13,
+      "name": "루시드",
+      "link": "./image/boss/루시드.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 14,
+      "name": "가디언 엔젤 슬라임",
+      "link": "./image/boss/가디언엔젤슬라임.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 15,
+      "name": "윌",
+      "link": "./image/boss/윌.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 16,
+      "name": "더스크",
+      "link": "./image/boss/더스크.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 17,
+      "name": "듄켈",
+      "link": "./image/boss/듄켈.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 18,
+      "name": "진 힐라",
+      "link": "./image/boss/진힐라.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 19,
+      "name": "검은 마법사",
+      "link": "./image/boss/검은마법사.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    },
+    {
+      "id": 20,
+      "name": "선택받은 세렌",
+      "link": "./image/boss/선택받은세렌.png",
+      "mode": false,
+      "day": "week_boss",
+      "close": false
+    }
+  ]
+}

@@ -21,7 +21,7 @@ const useItemUdt = () => {
 
     const reset_mode = () => {
         item_data.item.map((data)=>(
-            data.count = 0
+            data.count = ""
         ))
 
         dispatch(set_item(item_data));

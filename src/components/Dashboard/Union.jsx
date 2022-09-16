@@ -110,22 +110,28 @@ const Union = () => {
                         </div>
                       </div>
                     </div>
-                    <p className="text-muted union_progress_wrap">
-                      <span className="text-success me-2">
-                        <i className="mdi mdi-arrow-up-bold"></i>목표 유니온
-                      </span>
-                      <div className="progress progress_style">
-                        <div
-                          className="progress-bar"
-                          role="progressbar"
-                          style={{ width: `${calc_result}%` }}
-                          aria-valuenow="25"
-                          aria-valuemin="0"
-                          aria-valuemax="100"
-                        ></div>
+                    <div className="row">
+                        <div className="col-sm-12 col-xl-3 union_text">
+                          <span className="text-success me-2">
+                            <i className="mdi mdi-arrow-up-bold"></i>목표 유니온
+                          </span>
+                        </div>
+                        <div className="col-sm-12 col-xl-7 union_chart">
+                          <div className="progress progress_style">
+                            <div
+                              className="progress-bar"
+                              role="progressbar"
+                              style={{ width: `${calc_result}%` }}
+                              aria-valuenow="25"
+                              aria-valuemin="0"
+                              aria-valuemax="100"
+                            ></div>
+                          </div>
+                        </div>
+                        <div className="col-sm-12 col-xl-2 union_percent">
+                          <span>{calc_result}%</span>
+                        </div>
                       </div>
-                      <span>{calc_result}%</span>
-                    </p>
                   </div>
                 </div>
               </div>

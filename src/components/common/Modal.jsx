@@ -10,6 +10,7 @@ const ContentsModal = () => {
 
     const dispatch = useDispatch();
     const { contents_data } = useSelector(state=>state.contentsReducer);
+    const { etc_data } = useSelector(state=>state.etcReducer);
     const { modal_state } = useSelector(state=>state.modalReducer);
 
     const close_modal = () => {
@@ -28,6 +29,11 @@ const ContentsModal = () => {
                     {
                         contents_data.arcane.map((data, index) => (
                             <SymbolSetting data={data} index={index}/>
+                        ))
+                    }
+                    {
+                        etc_data.etc.map((data, index)=>(
+                            <SymbolSetting data={data} index={`etc${index}`} filter={"etc"}/>
                         ))
                     }
                     </div>

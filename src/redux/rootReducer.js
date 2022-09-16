@@ -4,6 +4,9 @@ import modalReducer from './reducer/modalReducer';
 import huntReducer from './reducer/huntReducer';
 import parkReducer from "./reducer/parkReducer";
 import unionReducer from './reducer/unionReducer';
+import etcReducer from './reducer/etcReducer';
+import bossReducer from './reducer/bossReducer';
+import bossModalReducer from './reducer/bossModalReducer';
 
 
 const rootReducer = combineReducers({
@@ -11,7 +14,10 @@ const rootReducer = combineReducers({
     modalReducer,
     huntReducer,
     parkReducer,
-    unionReducer
+    unionReducer,
+    etcReducer,
+    bossReducer,
+    bossModalReducer
 });
 
 export default rootReducer;

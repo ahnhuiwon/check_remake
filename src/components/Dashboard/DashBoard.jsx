@@ -6,6 +6,7 @@ import Chart from '../common/ Chart'
 import Input from '../common/Input'
 import { useUserSetting } from '../../customHooks/useSetting'
 import Union from './Union'
+import UpIcon from '../common/UpIcon'
 
 const DashBoard = () => {
   const { contents_data } = useSelector(state => state.contentsReducer)
@@ -23,17 +24,18 @@ const DashBoard = () => {
             저장하기
           </button>
         </div>
-        <div className="col-lg-6">
+        <div className="col-lg-12 col-xl-6">
           <div className="row">
+            {/** 대시보드 심볼카드 불타는 세르니움 제외 */}
             {contents_data.arcane.map((data, index) => (
-              <SymbolCard data={data} key={index} />
+              data.id !== 8 && <SymbolCard data={data} key={index} />
             ))}
           </div>
         </div>
 
-        <div className="col-xl-6">
+        <div className="col-lg-12 col-xl-6">
           <div className="row">
-            <div className="col-sm-6 col-lg-12">
+            <div className="col-sm-12 col-lg-12">
               <div className="card widget-flat mb-3">
                 <div className="card-body">
                   <div className="d-flex justify-content-between align-items-center mb-1">
@@ -52,12 +54,13 @@ const DashBoard = () => {
                 </div>
               </div>
             </div>
-            <div className="col-sm-6 col-lg-12">
+            <div className="col-sm-12 col-lg-12">
               <Union />
             </div>
           </div>
         </div>
       </div>
+      <UpIcon />
     </div>
   )
 }
