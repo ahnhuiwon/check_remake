@@ -1,70 +1,106 @@
-# Getting Started with Create React App
+**지인의 요청으로 RPG게임의 컨텐츠 체크기와 진행률을 볼 수 있는 대시보드 웹 어플리케이션 제작**
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 토이프로젝트
+    
+    배포 경로
+    
+    - [http://maplecheck.s3-website.ap-northeast-2.amazonaws.com/](http://maplecheck.s3-website.ap-northeast-2.amazonaws.com/)
+    
+    <br>
 
-## Available Scripts
+    ## 🛠 기술 스택
+    
+    ### **📚 Frameworkes & Libraries**
+    
+    - react.js@^18.2.0
+    - react-bootstrap@^2.5.0
+    - react-router-dom@^6.3.0
+    - node-sass@^7.0.1
+    - redux@^4.2.0
+    - chart.js@^3.9.1
+    - chartjs@^0.3.24
 
-In the project directory, you can run:
+    <br>
 
-### `npm start`
+    ## 🧐 프로젝트 빌드 및 실행 방법
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+    1. 상단 `Code` 버튼을 눌러 레포지토리를 클론 받습니다.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+    ```
+    $ git clone https://github.com/ahnhuiwon/Doing-now.git
+    ```
 
-### `npm test`
+    2. 패키지를 설치합니다.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+    ```
+    $ npm install
+    ```
 
-### `npm run build`
+    3. 서버를 실행합니다.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+    ```
+    $ npm start
+    ```
+    
+    <br>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+    ## 🙆‍♀️ 구현
+    
+    ### 필수 구현 사항
+    
+    - [x]  localstorage를 통한 컨텐츠 CRUD 구현
+    - [x]  Bootstrap을 통한 반응형 레이아웃 수정
+    - [x]  대시보드를 통한 컨텐츠 진행률 구현
+    - [x]  컨텐츠 결과를 체크 할 수 있는 섹션 추가
+    
+    ### 추가 구현 사항
+    
+    - [ ]  로딩컴포넌트 구현
+    - [x]  대시보드에 차트 및 그래프 추가 (2022-09-05 배포)
+    - [x]  사냥 컨텐츠의 경우 스크린샷 기능 추가 (2022-09-05 배포)
+    - [x]  컨텐츠 사이즈 조정 (2022-09-14 배포)
+    - [x]  주간 보스 컨텐츠 추가 (2022-09-16 배포)
+    - [ ]  컨텐츠 드래그앤드롭 기능 추가
+    
+    <aside>
+    ⚠️ 로딩 컴포넌트의 경우 사용자 요청으로 인해 구현 취소
+    
+    </aside>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+    <br>
 
-### `npm run eject`
+    ## 📈 디렉토리 구조
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    ```
+    .
+    ├── README.md
+    ├── config
+    ├── package.json
+    ├── public
+    │   ├── index.html
+    │   ├── favicon.ico
+    │   ├── logo192.png
+    │   ├── logo512.png
+    │   ├── manifest.json
+    │   └── robots.txt
+    └── src
+         ├── components    
+         ├── customhooks
+         ├── json
+         ├── redux
+         ├── route
+         └── style
+    ```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+    - components
+        - 컴포넌트 리스트 목록 디렉토리
+    - customhooks
+        - 데이터 처리 및 수정 로직 관리 디렉토리
+    - json
+        - 초기 데이터를 셋팅하는 json 관리 디렉토리
+    - redux
+        - redux 관리 디렉토리
+    - route
+        - route 관리 디렉토리
+    - style
+        - stylesheet 및 이미지 관리 디렉토리
